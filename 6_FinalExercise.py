@@ -35,3 +35,19 @@
 #   All uppercase:            THIS IS ANOTHER STRING WITH MIXED CASING. 
 #   Enter a string: <user presses Enter>
 #   Thanks for playing! <and the program ends>
+
+# Program that keeps asking for a string until the user enters an empty string
+
+while True:
+    user_input = input("Enter a string: ")
+
+    # If the user presses Enter without typing anything, end the loop
+    if user_input == "":
+        print("Thanks for playing!")
+        break
+
+    # Print different versions of the string
+    print("First letter capitalized:", user_input.capitalize())
+    print("All lowercase:           ", user_input.lower())
+    print("Title case:              ", user_input.title())
+    print("All uppercase:           ", user_input.upper())
