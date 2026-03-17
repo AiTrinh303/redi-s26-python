@@ -60,7 +60,7 @@ condition holds True.
 #    -> Sometimes the program does not run the code in the while 
 #       statement. This happens when the condition is not true to 
 #       start with. Check the following code!
-while False:
+while False:    
     print("Too bad, this text will never see the light of day!")
 #    -> Sometimes the program does not terminate. This happens when 
 #       the condition holds true indefinitely. Check the following 
@@ -91,9 +91,15 @@ while lines_printed < lines_to_print:
 #   Case 1) if x is negative, then it prints an error message
 #   Case 2) if x is positive, then it prints the first x *even numbers*
 # E.G.: if the input is 5, the program prints 2 4 6 8 10.
+print("Exercise 2: ")
 user_input = input("Enter any whole number: ")
 x = int(user_input)      # The call to int() can be combined with input()
                          # on a single line.
+if x < 0:
+    print("Error: the number is negative!")
+while x > 0:
+    print(2 * (x - 1) + 2)  # This is a formula to get the x-th even number.
+    x -= 1                  # Shorthand for x = x - 1                         
 
     
 # The while statement is *one* way to loop code in Python. But there are 
@@ -116,16 +122,28 @@ stop condition and ends the loop.
 """
 
 # EXERCISE 3: Solve EXERCISE 2 using a for loop
+print("Exercise 3: ")
 user_input = input("Enter any whole number: ")
 x = int(user_input)  # The call to int() can be combined with input()
                      # on a single line.
-
+if x < 0:
+    print("Error: the number is negative!")
+for i in range(1, x + 1):
+    print(2 * i)  # This is a formula to get the i-th even number.
 
 # EXERCISE 4: write a program that asks the user to input a number x and
 #     Case 1) if x is negative, then it prints an error message
 #     Case 2) if x is positive, then it prints the sum of the 
 #             first x numbers
 # E.G.: if the input is 5, the program prints 15 (which is 1+2+3+4+5)
+print("Exercise 4: ")
 user_input = input("Enter any whole number: ")
 x = int(user_input)  # The call to int() can be combined with input()
                      # on a single line.
+if x < 0:
+    print("Error: the number is negative!")
+else:
+    total = 0
+    for i in range(1, x + 1):
+        total += i
+    print("The sum of the first", x, "numbers is:", total)
