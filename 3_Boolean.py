@@ -51,3 +51,10 @@ not True          # Negation, not
 
 # The comparison operators used together with the logical operators allow to 
 # test complex conditions.
+
+name = input('Enter your name: ')
+age = int(input('Enter your age: '))
+has_ticket = input('Do you have a ticket? (yes/no): ') == 'yes'
+
+
+print("Is the person allowed to enter the concert?", (age >= 18) and has_ticket)
