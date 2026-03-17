@@ -124,7 +124,11 @@ two variables, but rather return new strings with the altered content.
 #    "<name> -- <nickname> -- <favorite color>"
 #
 #    Example: "Gianluca -- GG -- aqua"
+name = input("What is your name? ")
+nickname = input("What is your nickname? ")
+favorite_color = input("What is your favorite color? ")
 
+print("Exercise 1: " + name + " -- " + nickname + " -- " + favorite_color)
 
 # EXERCISE 2: Take the following text belo and write a program that prints 
 #             the following information:
@@ -145,6 +149,15 @@ remaining essentially unchanged. It was popularised in the 1960s with
 the release of Letraset sheets containing Lorem Ipsum passages, and 
 more recently with desktop publishing software like Aldus PageMaker 
 including versions of lorem Ipsum."""
+print('================================')
+print("Exercise 2.1: The word 'Lorem' appears", lore_ipsum_text.count("Lorem"), "times in the text.")
+print("Exercise 2.2: The word 'Ipsum' appears", lore_ipsum_text.count("Ipsum"), "times in the text.")
+print("Exercise 2.3: The first occurrence of 'Lorem' is at index", lore_ipsum_text.find("Lorem"))
+print("Exercise 2.4: The first occurrence of 'Ipsum' is at index", lore_ipsum_text.find("Ipsum"))
+print("Exercise 2.5: The last occurrence of 'Lorem' is at index", lore_ipsum_text.rfind("Lorem"))
+print("Exercise 2.6: The last occurrence of 'Ipsum' is at index", lore_ipsum_text.rfind("Ipsum"))
+print("Exercise 2.7: The word 'Lorem' appears", lore_ipsum_text.lower().count("lorem"), "times in the text, disregarding capitalization.")
+print("Exercise 2.8: The word 'Ipsum' appears", lore_ipsum_text.lower().count("ipsum"), "times in the text, disregarding capitalization.")
 
 
 # EXERCISE 3: Ask the user for two numbers and store them in variables.
@@ -152,6 +165,12 @@ including versions of lorem Ipsum."""
 # HINT: In the previous section on numerics, two functions were covered.
 # You may need them here. We want to perform multiplication, not string
 # concatenation.
+print('================================')
+number_one = input("Enter the first number: ")
+number_two = input("Enter the second number: ")
+result = float(number_one) * float(number_two)
+print("Exercise 3: The result of multiplying", number_one, "and", number_two, "is", result)
+
 
 
 # The None data type represents the absence of data in an object. None
