@@ -59,15 +59,27 @@ other constructs and statements.
 # 2) Prints True if the user is named John Johnson and he his 18 or older
 # 3) Otherwise print False.
 # 4) Use ONLY the if statement to do this.
+print ("Exercise 1: ")
 first_name = input("Enter your first name: ")
 last_name = input("Enter your last name: ")
 age = int(input("Enter your age: "))
 
+if first_name == "John" and last_name == "Johnson" and age >= 18:
+    print(True)
+if not (first_name == "John" and last_name == "Johnson" and age >= 18):
+    print(False)
+print("================================")
 
 # EXERCISE 2: Write a program that asks the user to give a string as input and:
 # Case 1) if the string contains more than 3 characters, prints the number 1
 # Case 2) otherwise, prints the number 0
+print("Exercise 2: ")
 user_string = input("Enter any string: ")
+if len(user_string) > 3:
+    print(1)
+else:
+    print(0)
+print("================================")
 
 
 """
@@ -89,10 +101,16 @@ else:
     print("The value of test is False.")
 
 # EXERCISE 3: Solve EXERCISE 1 using an if..else statement.
+print("Exercise 3: ")
 first_name = input("Enter your first name: ")
 last_name = input("Enter your last name: ")
 age = int(input("Enter your age: "))
 
+if first_name == "John" and last_name == "Johnson" and age >= 18:
+    print(True)
+else:
+    print(False)
+print("================================")
 
 # To deal with more complicated conditions we can *nest* several if statements 
 # into the other, as the following piece of code shows. Try to change the value 
@@ -155,4 +173,27 @@ else:
 # account negative numbers. A negative number for gross earnings is not valid.
   
 gross_salary = float(input("What was your gross earnings for 2023: "))
-computed_tax = 0.0
+
+if gross_salary < 0:
+    print("Invalid salary")
+
+elif gross_salary <= 32000:
+    tax = gross_salary * 0
+
+elif gross_salary <= 50000:
+    tax = gross_salary * 0.15
+
+elif gross_salary <= 100000:
+    tax = gross_salary * 0.25
+
+elif gross_salary <= 250000:
+    tax = gross_salary * 0.37
+
+elif gross_salary <= 500000:
+    tax = gross_salary * 0.42
+
+else:
+    tax = gross_salary * 0.45
+
+if gross_salary >= 0:
+    print("Your tax is:", tax)
