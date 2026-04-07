@@ -21,6 +21,9 @@ class Orange:
     
     def __add__(self, other):
         return self.weight + other.weight
+    
+    def __del__(self):
+        Orange.count -= 1
         
 
 orange1 = Orange(150)
@@ -41,4 +44,8 @@ print(f"Total weight of oranges: {total} grams")
 
 new_organge = orange1 + orange2
 print(f"Combined weight of orange1 and orange2: {new_organge} grams")
+
+del orange1
+
+print(f"Number of oranges after deletion: {Orange.count}")
 
