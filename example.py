@@ -145,15 +145,15 @@
 
 
 
-students = {
-     "name": "John Doe",
-     "marks": {
-          "math": 85,
-          "science": 90,
-          "literature": 78
-     }
-}
+# students = {
+#      "name": "John Doe",
+#      "marks": {
+#           "math": 85,
+#           "science": 90,
+#           "literature": 78
+#      }
+# }
 
 
-# print math score
-print("Math score:", students["marks"]["math"])
+# # print math score
+
