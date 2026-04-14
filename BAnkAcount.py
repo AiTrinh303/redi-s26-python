@@ -78,7 +78,6 @@ class InvestmentAccount(BankAccount):
         self._balance += self._balance * self.interest_rate        
 
 
-
 acc1 = SavingsAccount(200)
 acc2 = CheckingAccount(100, overdraft_limit=50)
 acc3 = InvestmentAccount(500, interest_rate=0.1)
