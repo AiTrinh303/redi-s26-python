@@ -1,0 +1,89 @@
+verse = "Somewhere over the rainbow\n" \
+        "Way up high\n" \
+        "There's a land that I heard of\n" \
+        "Once in a lullaby\n\n"
+
+verse = "Someday I'll wish upon a star\n" \
+        "And wake up where the clouds are far behind me\n" \
+        "Where troubles melt like lemon drops\n" \
+        "Away above the chimney tops\n" \
+        "That's where you'll find me\n\n" \
+        "Somewhere over the rainbow\n" \
+        "Bluebirds fly\n" \
+        "Birds fly over the rainbow\n" \
+        "Why, then, oh, why can't I?\n\n" \
+        "If happy little bluebirds fly\n" \
+        "Beyond the rainbow\n" \
+        "Why, oh, why can't I?"
+
+song_plays_per_day = [
+    [743,952,475,300,238,548,714],
+    [654,398,657,923,511,387,456],
+    [287,995,125,388,527,875,355],
+    [1045,844,1187,1091,760,938,995],
+    [2729,3189,2444,2702,2036,2748,2520]
+]
+
+favorite_bands_and_songs = [
+    {"Name": "Led Zeppelin", "Song": "The Ocean"},
+    {"Name": "Michael Buble", "Song": "Sway"},
+    {"Name": "Rush", "Song": "Tom Sawyer"},
+    {"Name": "Boston", "Song": "Rock and Roll Band"},
+    {"Name": "Van Halen", "Song": "Unchained"},
+    {"Name": "Devo", "Song": "Whip It"},
+    {"Name": "AC/DC", "Song": "Back in Black"},
+    {"Name": "Kansas", "Song": "Carry on Wayward Song"},
+    {"Name": "Alien Ant Farm", "Song": "Smooth Criminal"},
+    {"Name": "The White Stripes", "Song": "Icky Thump"},
+    {"Name": "Michael Jackson", "Song": "Beat It"},
+]
+
+favorite_band_and_song = {
+    "Name": "Rush", 
+    "Song": "Tom Sawyer",
+    "Singer": "Geddy Lee",
+    "Bass Player": "Geddy Lee",
+    "Guitarist": "Alex Lifeson",
+    "Percussion": "Neil Peart",
+    "Lyricist": "Neil Peart",
+    "Albums": [
+        {
+            "Album": "Rush",
+            "Song": "Working Man"
+        },
+        {
+            "Album": "2112",
+            "Song": "Discovery"
+        },
+        {
+            "Album": "Moving Pictures",
+            "Song": "Limelight"
+        },
+        {
+            "Album": "Clockwork Angels",
+            "Song": "Caravan"
+        },
+    ]
+}
+
+Example JSON:
+
+    {
+        "Name": "Johann",
+        "Hobbies": ["Music, "Gaming", "Traveling"],
+        "Age": 27,
+        "Address": {
+            "Work": null,
+            "Home": ["Berlin", "Germany"]
+        }, 
+        "Friends": [
+            {
+                "Name": "Philipp",
+                "Hobbies": ["Eating", "Sleeping", "Reading"]
+            },
+            {
+                "Name": "Mitchell",
+                "Hobbies": ["Running", "Snacking", "Writing"]
+            },
+        ]
+    }
